@@ -39,24 +39,29 @@
             font-family: 'Kalam', cursive;
 }
 
-button {
+input {
          font-family: inherit;
+        height: 50px;
         }
 
         #main-container {
             display: flex;
             justify-content: center;
+            align-items: center;
             background-color: var(--main-bg-color);
             width: 50%;
             }
 
-            #add-button {
+            input[type="reset"], input[type="submit"] {
                 font-size: var(--base-font-size);
                 background-color: var(--main-bt-color);
-                height: 50px;
+                width: 20%;
+                            }
 
-
-            }
+#add-new-todo {
+    width: 60%;
+    font-size: var(--base-font-size);
+}
 
             @media (max-width: 500px) {
                 #main-container {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,80 +8,19 @@
     <link rel="stylesheet" href="whatToDoList_style.css">
     <script src="whatToDoList_script.js" defer></script>
 
-    <!--
-    <style>
-:root {
-    --base-font-size: 2rem;
-    --main-bg-color: rgb(238, 243, 247);
-    --main-bt-color: rgb(245, 181, 85);
-
-}
-@font-face {
-    font-display: swap;
-    font-family: 'Kalam';
-    font-style: normal;
-    font-weight: 300;
-    src: url('fonts/kalam-v18-latin-300.woff2');
-}
-@font-face {
-    font-display: swap;
-    font-family: 'Kalam';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/kalam-v18-latin-regular.woff2');
-}
-@font-face {
-    font-display: swap;
-    font-family: 'Kalam';
-    font-style: normal;
-    font-weight: 700;
-    src: url('fonts/kalam-v18-latin-700.woff2');
-}
-
-
-       * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            display: flex;
-            justify-content: center;
-            font-family: 'Kalam', cursive;
-}
-
-button {
-         font-family: inherit;
-        }
-
-        #main-container {
-            display: flex;
-            justify-content: center;
-            background-color: var(--main-bg-color);
-            width: 50%;
-            }
-
-            #add-button {
-                font-size: var(--base-font-size);
-                background-color: var(--main-bt-color);
-                height: 50px;
-
-
-            }
-
-            @media (max-width: 500px) {
-                #main-container {
-                    width: 100%;
-                }
-            }
-
-    </style>
-    -->
 </head>
+
 <body>
-  <div id="main-container">
-<button id="add-button">Neue Aufgabe anlegen.</button>
-  </div>
+    <form id="main-container">
+        <input type="reset">
+        <textarea id="add-new-todo" type="text" placeholder="was will ich heute noch erledigen" required></textarea>
+        <input type="submit">
+    </form>
+
+    <ol id="todo-main-list">
+
+    </ol>
+
 </body>
+
 </html>
