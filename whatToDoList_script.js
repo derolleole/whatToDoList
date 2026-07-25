@@ -1,3 +1,5 @@
+let listOfTodos = [];
+
 function addNewToDo() {
     const toDoMainContainer = document.getElementById("todo-main-list");
 const toDoMainList = document.createElement("li");
@@ -8,5 +10,8 @@ const toDoMainList = document.createElement("li");
 const form = document.getElementById("main-container");
     form.addEventListener("submit", function(event) {
     event.preventDefault();
-    alert("Es hat geklappt!");
+   // const fieldOfTodo = document.getElementById("add-new-todo").value;
+    listOfTodos.push(document.getElementById("add-new-todo").value);
+    document.getElementById("add-new-todo").value = "";
+console.log(listOfTodos);
 })

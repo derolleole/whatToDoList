@@ -59,6 +59,7 @@ input {
                             }
 
 #add-new-todo {
+    field-sizing: content;
     width: 60%;
     font-size: var(--base-font-size);
 }
